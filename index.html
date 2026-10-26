@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hugo</title>
+
+    <!-- CSS externo (ficheiro style.css dentro da pasta css) -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="image.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Cabeçalho e menu de navegação -->
+    <header>
+        <h1>Página do Hugo</h1>
+
+        <nav id="menu">
+            <a href="#sobre-mim">Sobre mimn</a>
+            <a href="#links">Links favoritos</a>
+            <a href="#horario">O meu horário</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Secção: Sobre mim -->
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+
+            <div class="layout-flex">
+                <div class="texto">
+                    <h3>Quem sou eu</h3>
+
+                    <p>
+                        Olá! Eu sou o Hugo, um estudante de desenvolvimento para dispositivos móveis,
+                        gosto de aprender novas formas de criar e explorar novas tecnologias.
+                    </p>
+
+                    <p>
+                        Gosto de programação, música, séries e de explorar novas ideias.
+                        Estou sempre à procura de novos desafios e oportunidades para
+                        crescer como pessoa e como profissional.
+                    </p>
+                </div>
+
+                <img
+                    class="foto-perfil"
+                    src="Hugo bastos cv.png"
+                    alt="Foto de perfil do Hugo"
+                >
+            </div>
+
+            <h3>Os meus hobbies e tarefas</h3>
+
+            <div class="listas">
+                <div class="lista-caixa">
+                    <p>Algumas atividades de que gosto são:</p>
+                    <ul>
+                        <li>Jogar videojogos</li>
+                        <li>Ouvir música</li>
+                        <li>Ver filmes e séries</li>
+                        <li>Utilizar o computador</li>
+                    </ul>
+                </div>
+
+                <div class="lista-caixa">
+                    <p>Três tarefas que devo realizar:</p>
+                    <ol>
+                        <li>Estudar programação</li>
+                        <li>Organizar o meu tempo</li>
+                        <li>Fazer os trabalhos da faculdade</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Secção: Links favoritos -->
+        <section id="links">
+            <h2>Links favoritos</h2>
+
+            <ul>
+                <li>
+                    <a href="https://open.spotify.com/" target="_blank">
+                        Spotify - serviço de música
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        YouTube - vídeos e entretenimento
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fivem.net/" target="_blank">
+                        FiveM - jogo de simulação
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Secção: Horário -->
+        <section id="horario">
+            <h2>O meu horário</h2>
+
+            <div class="tabela-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 13:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>P</td>
+                            <td>MD</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>14:00 - 18:00</td>
+                            <td>EMP</td>
+                            <td>PW</td>
+                            <td>PDM III</td>
+                            <td></td>
+                            <td>CDJD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- Secção: Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form id="form-contacto">
+                <label for="nome" class="obrigatorio">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email" class="obrigatorio">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreve a tua mensagem..."
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Página do Hugo Bastos</p>
+    </footer>
+
+</body>
+</html>
